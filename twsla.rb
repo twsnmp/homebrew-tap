@@ -5,20 +5,20 @@
 class Twsla < Formula
   desc ""
   homepage ""
-  version "1.6.0"
+  version "1.7.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/twsnmp/twsla/releases/download/v1.6.0/twsla_Darwin_x86_64.tar.gz"
-      sha256 "5a51f921ef3756d2219a52d62e4a35cad0c7143e05c866d10d3ed5c665c3500f"
+      url "https://github.com/twsnmp/twsla/releases/download/v1.7.0/twsla_Darwin_x86_64.tar.gz"
+      sha256 "50b8e6ffbb296662d92bfda588b85163cb1b0df29e3ff4a401f053918b3f6fd3"
 
       def install
         bin.install "twsla"
       end
     end
     on_arm do
-      url "https://github.com/twsnmp/twsla/releases/download/v1.6.0/twsla_Darwin_arm64.tar.gz"
-      sha256 "6a02ad217b9db8666ef15a2a340c51f6801bf43d75b7084085880126492b1929"
+      url "https://github.com/twsnmp/twsla/releases/download/v1.7.0/twsla_Darwin_arm64.tar.gz"
+      sha256 "77912cfb5c293b847df33c742e9a4812de28c7c98ef79df279ee73eba4c6e07e"
 
       def install
         bin.install "twsla"
@@ -29,8 +29,8 @@ class Twsla < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twsla/releases/download/v1.6.0/twsla_Linux_x86_64.tar.gz"
-        sha256 "04daf04c3e39511d5434e09d3ab66a292e551e81f1c57456d66dd7d56fdb0828"
+        url "https://github.com/twsnmp/twsla/releases/download/v1.7.0/twsla_Linux_x86_64.tar.gz"
+        sha256 "7f3c40a7a1747c91906017cb4410b18d415464c890f138deb06e6d37edf00efe"
 
         def install
           bin.install "twsla"
@@ -39,8 +39,8 @@ class Twsla < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twsla/releases/download/v1.6.0/twsla_Linux_arm64.tar.gz"
-        sha256 "ef4e1d724721a91f11ae6545b535c67a21d1d540ebf0f73be5fa0627d5ea10df"
+        url "https://github.com/twsnmp/twsla/releases/download/v1.7.0/twsla_Linux_arm64.tar.gz"
+        sha256 "b475c54ff441d1017b943ecccf521fc440ec055c27bd6c404c31ef893f0d0eae"
 
         def install
           bin.install "twsla"
