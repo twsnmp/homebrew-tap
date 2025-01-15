@@ -5,20 +5,20 @@
 class Twsla < Formula
   desc ""
   homepage ""
-  version "1.8.0"
+  version "1.9.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/twsnmp/twsla/releases/download/v1.8.0/twsla_Darwin_x86_64.tar.gz"
-      sha256 "b7d629a0b5ba7495f9b40d37474b66db4b302bfd312d4fd60d428f280c57edb6"
+    if Hardware::CPU.intel?
+      url "https://github.com/twsnmp/twsla/releases/download/v1.9.0/twsla_Darwin_x86_64.tar.gz"
+      sha256 "b6bcc78cda0d97d444f2c528b0a373f8f6c2b1bc345e4ab0139d361736eb5801"
 
       def install
         bin.install "twsla"
       end
     end
-    on_arm do
-      url "https://github.com/twsnmp/twsla/releases/download/v1.8.0/twsla_Darwin_arm64.tar.gz"
-      sha256 "22e32d20c078fa687539ef22d52cbe9428bb2a69d6ba07cdb9be6f97fba9c231"
+    if Hardware::CPU.arm?
+      url "https://github.com/twsnmp/twsla/releases/download/v1.9.0/twsla_Darwin_arm64.tar.gz"
+      sha256 "6d49b93cb9116c304968cb491e7e8e02ac12c497d2d29b07452ef4e3f7869638"
 
       def install
         bin.install "twsla"
@@ -27,20 +27,20 @@ class Twsla < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twsla/releases/download/v1.8.0/twsla_Linux_x86_64.tar.gz"
-        sha256 "58313b726803e011f343a22dcddd994daffe2357a44fa4c7b321cf932770ab74"
+        url "https://github.com/twsnmp/twsla/releases/download/v1.9.0/twsla_Linux_x86_64.tar.gz"
+        sha256 "a0f2131e20b85ce25c770535f4700d370d77c3d14ab8ee633821059b4b39a909"
 
         def install
           bin.install "twsla"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twsla/releases/download/v1.8.0/twsla_Linux_arm64.tar.gz"
-        sha256 "1d06a780a9e076000fb870a8f00c9a832592a7cb3c380b48707f1f605fcc3f06"
+        url "https://github.com/twsnmp/twsla/releases/download/v1.9.0/twsla_Linux_arm64.tar.gz"
+        sha256 "226f0b4b922fb3850fb53b32b437ecdaf7afd6d5c3218e82f4af5655531145a9"
 
         def install
           bin.install "twsla"
