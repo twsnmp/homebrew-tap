@@ -5,20 +5,20 @@
 class Twlogeye < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.0/twlogeye_Darwin_x86_64.tar.gz"
-      sha256 "e150f780aa9617b6a9119d0d053418feb8dded0e90b81820b946c91f2e7f61f0"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Darwin_x86_64.tar.gz"
+      sha256 "3a51b3ed82191ac287a92469ab3d17b0711f606759df2bdfd8829323f2554a0f"
 
       def install
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.0/twlogeye_Darwin_arm64.tar.gz"
-      sha256 "2c8b6660cccd03ec06c6aee085f3d1eae4a8cf4f66be6dd2b6d1cfdce311e572"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Darwin_arm64.tar.gz"
+      sha256 "bfe4d4a34ebf4a7c486f4fb81d44f7676afa51525c43085bcbbca7db09a72463"
 
       def install
         bin.install "twlogeye"
@@ -29,8 +29,8 @@ class Twlogeye < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.0/twlogeye_Linux_x86_64.tar.gz"
-        sha256 "a1f325194d1984ff6a5b83b780ab1d2961ed5290244f032d24af615adfad2506"
+        url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Linux_x86_64.tar.gz"
+        sha256 "f211ae7cfe2e1a2f84ca0d61a6921a5ba3b446f9be33a03999d07a33596380cc"
 
         def install
           bin.install "twlogeye"
@@ -39,8 +39,8 @@ class Twlogeye < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.0/twlogeye_Linux_arm64.tar.gz"
-        sha256 "2a589462cc78ed7c3d174694a7384d16d33724044cf42f65191fca65a039ad8c"
+        url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Linux_arm64.tar.gz"
+        sha256 "139b51993eab163e4ac8a0229d3b76c69ca1a4171fb7faa61de4035b830b8dd3"
 
         def install
           bin.install "twlogeye"
