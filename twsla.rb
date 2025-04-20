@@ -5,20 +5,20 @@
 class Twsla < Formula
   desc ""
   homepage ""
-  version "1.10.1"
+  version "1.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twsla/releases/download/v1.10.1/twsla_Darwin_x86_64.tar.gz"
-      sha256 "321bed054a8c6824b4eaa902c41de016e98252bdf5394bb7a412baeab2b74c4c"
+      url "https://github.com/twsnmp/twsla/releases/download/v1.11.0/twsla_Darwin_x86_64.tar.gz"
+      sha256 "f8cb006cdae580edd6504438e5dafce543c395c6d018e238421570bf84a6fb5d"
 
       def install
         bin.install "twsla"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twsla/releases/download/v1.10.1/twsla_Darwin_arm64.tar.gz"
-      sha256 "86e40b65530c728a71ae235abb2e56946a082a8939a00b97d2ba536a5f85330f"
+      url "https://github.com/twsnmp/twsla/releases/download/v1.11.0/twsla_Darwin_arm64.tar.gz"
+      sha256 "566cab13cfcf43c1b9688bbe9d254676170ce561d8c56e3d1d15ec3625b64339"
 
       def install
         bin.install "twsla"
@@ -29,8 +29,8 @@ class Twsla < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twsla/releases/download/v1.10.1/twsla_Linux_x86_64.tar.gz"
-        sha256 "25351bcb5e2ec9fc67558e5cc0785b7cad51ecbb2789e2274641acb41755f653"
+        url "https://github.com/twsnmp/twsla/releases/download/v1.11.0/twsla_Linux_x86_64.tar.gz"
+        sha256 "6f5e859e6ebe5516cc8e86b05c2d80bdca232bdd5c42b152544e1efc7eaa5cbd"
 
         def install
           bin.install "twsla"
@@ -39,8 +39,8 @@ class Twsla < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twsla/releases/download/v1.10.1/twsla_Linux_arm64.tar.gz"
-        sha256 "e03a0608d60831b87e0891765719d12dd7605139339af8513a2839a62a6832aa"
+        url "https://github.com/twsnmp/twsla/releases/download/v1.11.0/twsla_Linux_arm64.tar.gz"
+        sha256 "01b97a596d8327b1b1d6733088f47515295d1c4f211fff9893a99afa499ef163"
 
         def install
           bin.install "twsla"
