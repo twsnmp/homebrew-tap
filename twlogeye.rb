@@ -5,20 +5,20 @@
 class Twlogeye < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Darwin_x86_64.tar.gz"
-      sha256 "3a51b3ed82191ac287a92469ab3d17b0711f606759df2bdfd8829323f2554a0f"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.0/twlogeye_Darwin_x86_64.tar.gz"
+      sha256 "c76b58f77748eb2f400f367d2a7735c9b958ea8e0c95e970273bb0ca7fa2354a"
 
       def install
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Darwin_arm64.tar.gz"
-      sha256 "bfe4d4a34ebf4a7c486f4fb81d44f7676afa51525c43085bcbbca7db09a72463"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.0/twlogeye_Darwin_arm64.tar.gz"
+      sha256 "3411048b482187135b5ec9976f93e588ed3f6b5da00508ef661404c14b2f585e"
 
       def install
         bin.install "twlogeye"
@@ -27,24 +27,18 @@ class Twlogeye < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Linux_x86_64.tar.gz"
-        sha256 "f211ae7cfe2e1a2f84ca0d61a6921a5ba3b446f9be33a03999d07a33596380cc"
-
-        def install
-          bin.install "twlogeye"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.0/twlogeye_Linux_x86_64.tar.gz"
+      sha256 "1a9e3bd3c082b2d19bf0e2ccb64a3890b881928a886248f2917500715ccb5457"
+      def install
+        bin.install "twlogeye"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/twsnmp/twlogeye/releases/download/v0.1.1/twlogeye_Linux_arm64.tar.gz"
-        sha256 "139b51993eab163e4ac8a0229d3b76c69ca1a4171fb7faa61de4035b830b8dd3"
-
-        def install
-          bin.install "twlogeye"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.0/twlogeye_Linux_arm64.tar.gz"
+      sha256 "c43f05ef37fa4126d6e812b79c0520a2f785c1dafdaf22806f00b9532bd7e8e3"
+      def install
+        bin.install "twlogeye"
       end
     end
   end
