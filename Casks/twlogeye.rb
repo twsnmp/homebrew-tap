@@ -3,7 +3,7 @@ cask "twlogeye" do
   name "twlogeye"
   desc ""
   homepage ""
-  version "0.3.0"
+  version "0.3.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "twlogeye" do
   on_macos do
     on_intel do
       url "https://github.com/twsnmp/twlogeye/releases/download/v#{version}/twlogeye_Darwin_x86_64.tar.gz"
-      sha256 "c76b58f77748eb2f400f367d2a7735c9b958ea8e0c95e970273bb0ca7fa2354a"
+      sha256 "e423aa5bb4c8f2f96323ed7f91d97fd4c9af02130004e228e9a9b29366b1a816"
     end
     on_arm do
       url "https://github.com/twsnmp/twlogeye/releases/download/v#{version}/twlogeye_Darwin_arm64.tar.gz"
-      sha256 "3411048b482187135b5ec9976f93e588ed3f6b5da00508ef661404c14b2f585e"
+      sha256 "cef8621e0e8e70ab46b2f417f0218480c0a288609b053a0c41cf41f6d6cb5071"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/twsnmp/twlogeye/releases/download/v#{version}/twlogeye_Linux_x86_64.tar.gz"
-      sha256 "1a9e3bd3c082b2d19bf0e2ccb64a3890b881928a886248f2917500715ccb5457"
+      sha256 "346c8aa6b06b0d40468c7fe40e147e084edd0123de6f8df8bf87495f02a70844"
     end
     on_arm do
       url "https://github.com/twsnmp/twlogeye/releases/download/v#{version}/twlogeye_Linux_arm64.tar.gz"
-      sha256 "c43f05ef37fa4126d6e812b79c0520a2f785c1dafdaf22806f00b9532bd7e8e3"
+      sha256 "d3ab842545889214c1c6174001146369237fdc3e3c6765ccfcf56e77e32333f8"
     end
   end
 
