@@ -5,20 +5,20 @@
 class Twlogeye < Formula
   desc ""
   homepage ""
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.3/twlogeye_Darwin_x86_64.tar.gz"
-      sha256 "2fc33d7407f34c257920092e36d0cb387a374eb9f044a1c29886d801f2b4cfa7"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.4/twlogeye_Darwin_x86_64.tar.gz"
+      sha256 "524221ca1c14e53f52755683915b847353d8b4c0bf67b274357f46d39ef3c13b"
 
       def install
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.3/twlogeye_Darwin_arm64.tar.gz"
-      sha256 "0bd91e0809c47204e29314f57c4e0c23988cd10296843c9ba03de7e1300d3f73"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.4/twlogeye_Darwin_arm64.tar.gz"
+      sha256 "cf2a1758db5cf7d7809b4d6da570f2f27ad96ee396c3de97f20d2ffc01d44078"
 
       def install
         bin.install "twlogeye"
@@ -28,15 +28,15 @@ class Twlogeye < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.3/twlogeye_Linux_x86_64.tar.gz"
-      sha256 "44699118fc0a3040d27f32aa914d5343e221c8a129ba7e058777521160f07d62"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.4/twlogeye_Linux_x86_64.tar.gz"
+      sha256 "83ab35dc05695a8fa2981d6f6f261d1232755dc94ecb15b68895a481a1904d6e"
       def install
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.3/twlogeye_Linux_arm64.tar.gz"
-      sha256 "cd79b67644d3341c36c0e0c81b1b1d2bd0489a2eafe909e91adcbb2872f88841"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.3.4/twlogeye_Linux_arm64.tar.gz"
+      sha256 "66a124e9a7683025c9032c9d4624a9e0ea03f89dcd6aaca6c15c21d28c656787"
       def install
         bin.install "twlogeye"
       end
