@@ -3,7 +3,7 @@ cask "twsla" do
   name "twsla"
   desc ""
   homepage ""
-  version "1.20.1"
+  version "1.21.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "twsla" do
   on_macos do
     on_intel do
       url "https://github.com/twsnmp/twsla/releases/download/v#{version}/twsla_Darwin_x86_64.tar.gz"
-      sha256 "bfe7613bd67ea8e1d231ca1303dff021234c8cabbcd8731cee03e8f9cbc6ceea"
+      sha256 "5b55db15ebfed1e694749ac41b02448213bdd8317c123a19520cfc60cb82a1c9"
     end
     on_arm do
       url "https://github.com/twsnmp/twsla/releases/download/v#{version}/twsla_Darwin_arm64.tar.gz"
-      sha256 "9dab37ff7358cd876ee6ee76333996a8eaf58ecdd263c1385b7acadc631b41e8"
+      sha256 "cb243fec36491b8d449ad212555e1599ee1b0d4de90c7ac7130a49deaeaee179"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/twsnmp/twsla/releases/download/v#{version}/twsla_Linux_x86_64.tar.gz"
-      sha256 "4476f3f440a2df5537d44d986fbf64bc5bb51449078aea6c086f86d944b18534"
+      sha256 "842b768fe63ba1a8d2e788f7e838096e3c33c2a4ee1dd06b4bbb92d94b46309b"
     end
     on_arm do
       url "https://github.com/twsnmp/twsla/releases/download/v#{version}/twsla_Linux_arm64.tar.gz"
-      sha256 "c43bd41ad4d56e9a9bce60395826e2ec9796d19e7e9d4c388fa3e56479bcebb5"
+      sha256 "215b25187fff579c977638ad5b36b6c5a4752044629fa5e56c829a0c29c6ab81"
     end
   end
 
