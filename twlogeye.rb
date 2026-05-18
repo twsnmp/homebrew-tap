@@ -5,22 +5,22 @@
 class Twlogeye < Formula
   desc ""
   homepage ""
-  version "0.4.3"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.4.3/twlogeye_Darwin_x86_64.tar.gz"
-      sha256 "e49b321b0a9bd2d4c7f06b83fc0cae096cfc9e44e262a0429e032c62a8224dcc"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_darwin_amd64.tar.gz"
+      sha256 "77ffadb0759e61fa03e3e44436a40045d5a90855684cfd4dd0e65187252d08c0"
 
-      def install
+      define_method(:install) do
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.4.3/twlogeye_Darwin_arm64.tar.gz"
-      sha256 "7c635ee9342f46622c415958d32163eb8265e81d063da4ecd000dc080246c1ba"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_darwin_arm64.tar.gz"
+      sha256 "44e0fc15457d55019ee93eeac2fb8ceffc3905629c2dd394ab2b86be521f86f8"
 
-      def install
+      define_method(:install) do
         bin.install "twlogeye"
       end
     end
@@ -28,16 +28,16 @@ class Twlogeye < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.4.3/twlogeye_Linux_x86_64.tar.gz"
-      sha256 "f4b95271d858ad0e07b6ac6b3d215bb5a6f40d272d3a48c710f48fcae735f8bf"
-      def install
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_linux_amd64.tar.gz"
+      sha256 "92e26800095e8cc115c5733a958e8f601921ea01d2b4316537f53981e4b4e63a"
+      define_method(:install) do
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.4.3/twlogeye_Linux_arm64.tar.gz"
-      sha256 "1a6715cfe5cdefa23a2802437502f7a797332e77d8d7956aa252951290812ede"
-      def install
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_linux_arm64.tar.gz"
+      sha256 "6d9a8753f0db308133dfeb5ead9be2d067be29dbfef8eeec49715095eedf2957"
+      define_method(:install) do
         bin.install "twlogeye"
       end
     end
