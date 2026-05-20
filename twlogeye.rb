@@ -10,7 +10,7 @@ class Twlogeye < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_darwin_amd64.tar.gz"
-      sha256 "f52911e5ec93f81e685fa07929d9de3c4f2ffc747405ced4d041d7c3bc701185"
+      sha256 "702cf4d97feba2ecf1633f828bf04d5cde061197badcd75c73c515cf64389f36"
 
       define_method(:install) do
         bin.install "twlogeye"
@@ -18,7 +18,7 @@ class Twlogeye < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_darwin_arm64.tar.gz"
-      sha256 "1d58ebd2339adddb77cdc8780b1865f3245ebd885dea7bce1452e28fd00f336e"
+      sha256 "000b06b60b736e3c11b3051be33da63ef598c75cb236e730e5aee1cf5f7a3abe"
 
       define_method(:install) do
         bin.install "twlogeye"
@@ -29,14 +29,14 @@ class Twlogeye < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_linux_amd64.tar.gz"
-      sha256 "86d4d9897b85ab97b92f139c59dce7e846c70168e6f62b4cb3999e383178fc96"
+      sha256 "bcd7ae27bf5dbb4cb6835a8b631e33a060ed9d2d727838237da6f5eef8e0b057"
       define_method(:install) do
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_linux_arm64.tar.gz"
-      sha256 "6b804ca4ab4114f05e970b79df676e31f7b983ccb53486cbd96593932d877d4c"
+      sha256 "7c1d4b4058e58f06313a31f12ddf323d4c94e8322d3c607b9b437328433f0cfc"
       define_method(:install) do
         bin.install "twlogeye"
       end
