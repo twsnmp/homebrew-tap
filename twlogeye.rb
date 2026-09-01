@@ -5,20 +5,20 @@
 class Twlogeye < Formula
   desc ""
   homepage ""
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_darwin_amd64.tar.gz"
-      sha256 "702cf4d97feba2ecf1633f828bf04d5cde061197badcd75c73c515cf64389f36"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.6.0/twlogeye_darwin_amd64.tar.gz"
+      sha256 "d03a06fbce49a693bd124b303ec24706cf0cfcd7c8cc2e84c451537fad9a7019"
 
       define_method(:install) do
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_darwin_arm64.tar.gz"
-      sha256 "000b06b60b736e3c11b3051be33da63ef598c75cb236e730e5aee1cf5f7a3abe"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.6.0/twlogeye_darwin_arm64.tar.gz"
+      sha256 "07a632216f0db7f3cd5ab88e53b9e04a08a3c85e5dc10cf335c47501d8c67a9e"
 
       define_method(:install) do
         bin.install "twlogeye"
@@ -28,15 +28,15 @@ class Twlogeye < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_linux_amd64.tar.gz"
-      sha256 "bcd7ae27bf5dbb4cb6835a8b631e33a060ed9d2d727838237da6f5eef8e0b057"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.6.0/twlogeye_linux_amd64.tar.gz"
+      sha256 "71245c8d1143b9fcad466d863096f64818e360a2036b2a60298b97584367d88d"
       define_method(:install) do
         bin.install "twlogeye"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twlogeye/releases/download/v0.5.0/twlogeye_linux_arm64.tar.gz"
-      sha256 "7c1d4b4058e58f06313a31f12ddf323d4c94e8322d3c607b9b437328433f0cfc"
+      url "https://github.com/twsnmp/twlogeye/releases/download/v0.6.0/twlogeye_linux_arm64.tar.gz"
+      sha256 "9ef5135c43902711854404a28e3081eedcd0aeaaa441b97e16932d32516769bb"
       define_method(:install) do
         bin.install "twlogeye"
       end
