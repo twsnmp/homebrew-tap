@@ -5,20 +5,20 @@
 class Twsla < Formula
   desc ""
   homepage ""
-  version "2.0.0"
+  version "2.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twsla/releases/download/v2.0.0/twsla_darwin_amd64.tar.gz"
-      sha256 "1f82fd5026b32bcc48941f177bd675fc8e9724495b4f131ddd389ff15956e76e"
+      url "https://github.com/twsnmp/twsla/releases/download/v2.1.0/twsla_darwin_amd64.tar.gz"
+      sha256 "063b9779cc90cb1214ee30f56f6cf91845a48757f628a9cebe149819e43237e1"
 
       define_method(:install) do
         bin.install "twsla"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twsla/releases/download/v2.0.0/twsla_darwin_arm64.tar.gz"
-      sha256 "9553a01353c3f6161e6de026ffad3e088821b9514743561e504469a67dcfd79d"
+      url "https://github.com/twsnmp/twsla/releases/download/v2.1.0/twsla_darwin_arm64.tar.gz"
+      sha256 "29e862cd9f006e9ad7748d052f98120b9f4b9849b84c3db7b72aa6105016d249"
 
       define_method(:install) do
         bin.install "twsla"
@@ -28,15 +28,15 @@ class Twsla < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twsla/releases/download/v2.0.0/twsla_linux_amd64.tar.gz"
-      sha256 "4c2d2716f6ee1886b359800a45dbfe8cb8d6619985d7bd6921be5e601163c75c"
+      url "https://github.com/twsnmp/twsla/releases/download/v2.1.0/twsla_linux_amd64.tar.gz"
+      sha256 "94b65e53f69ee34ef3625bca1d284d25345dde33fe4d1fa7dc891f4a472bd694"
       define_method(:install) do
         bin.install "twsla"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twsla/releases/download/v2.0.0/twsla_linux_arm64.tar.gz"
-      sha256 "9a87915b91134f7486ff3d7d8092b00de2c569a86837d26afcecc95db25d4b39"
+      url "https://github.com/twsnmp/twsla/releases/download/v2.1.0/twsla_linux_arm64.tar.gz"
+      sha256 "8c4d5ce1a90d421097fabe89970a6fd472ed251a979fbdb77ac549f1d04f8bec"
       define_method(:install) do
         bin.install "twsla"
       end
