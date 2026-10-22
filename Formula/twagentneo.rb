@@ -5,21 +5,21 @@
 class Twagentneo < Formula
   desc "AI Security Monitoring Agent for TWSNMP NEO"
   homepage "https://github.com/twsnmp/twagentneo"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twagentneo/releases/download/v0.1.0/twagentneo_darwin_amd64.tar.gz"
-      sha256 "a64b71e7c9fc34dc096c5af9fd036d05436ffdba3fb5940bf8cff299d2eb4f50"
+      url "https://github.com/twsnmp/twagentneo/releases/download/v0.2.0/twagentneo_darwin_amd64.tar.gz"
+      sha256 "0abf3c53d37cbea0207a2fad5c0fea217e580f40560519bc62261c0b1504c831"
 
       define_method(:install) do
         bin.install "twagentneo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twagentneo/releases/download/v0.1.0/twagentneo_darwin_arm64.tar.gz"
-      sha256 "40528387b6791194440965d2e1c3b27b2380fc0cccc29ad295c411a5d360104f"
+      url "https://github.com/twsnmp/twagentneo/releases/download/v0.2.0/twagentneo_darwin_arm64.tar.gz"
+      sha256 "9678907965f2b1a52dbb41f5a7437091dd83a2d9d81020d781909e9c47be14b7"
 
       define_method(:install) do
         bin.install "twagentneo"
@@ -29,15 +29,15 @@ class Twagentneo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twagentneo/releases/download/v0.1.0/twagentneo_linux_amd64.tar.gz"
-      sha256 "c3c6de19ef5264a394564716561f9fb59d44fe89583e91f94a18874300a92dc8"
+      url "https://github.com/twsnmp/twagentneo/releases/download/v0.2.0/twagentneo_linux_amd64.tar.gz"
+      sha256 "a45875f8e40b45182ca66cf3558d295ed83f4d932e66a6814f63a190266a9e5b"
       define_method(:install) do
         bin.install "twagentneo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twagentneo/releases/download/v0.1.0/twagentneo_linux_arm64.tar.gz"
-      sha256 "2d2b53284a4352c0c029c2fd7c7d14425c3bbec27fe1d811f52400613b2174c2"
+      url "https://github.com/twsnmp/twagentneo/releases/download/v0.2.0/twagentneo_linux_arm64.tar.gz"
+      sha256 "624c39960fc58d0fdb53816cbfc48788d4c4d2c140aa4783766cce0fe6a210b1"
       define_method(:install) do
         bin.install "twagentneo"
       end
