@@ -5,21 +5,21 @@
 class Twsnmpneo < Formula
   desc "TWSNMP NEO - The modern AI-native network management platform"
   homepage "https://github.com/twsnmp/twsnmpneo"
-  version "0.7.0"
+  version "0.8.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.7.0/twsnmpneo_darwin_amd64.tar.gz"
-      sha256 "65b8fa83821d07a3c27ce1d713b89869774e11e2b07e493fa6fcbecc05d8aa6c"
+      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.8.0/twsnmpneo_darwin_amd64.tar.gz"
+      sha256 "178f9dc6cd924938d0070a8d616ee2f3fb06865133966f5d32023c586e231ef0"
 
       define_method(:install) do
         bin.install "twsnmpneo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.7.0/twsnmpneo_darwin_arm64.tar.gz"
-      sha256 "d55dd6891b956d008e3d8a4fa3e91a8546ba84d1532d05631b39b431db817b82"
+      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.8.0/twsnmpneo_darwin_arm64.tar.gz"
+      sha256 "cda092876cf2cb806c2d117264358e114280cecc56fb0ebcf62c4575b4884172"
 
       define_method(:install) do
         bin.install "twsnmpneo"
@@ -29,15 +29,15 @@ class Twsnmpneo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.7.0/twsnmpneo_linux_amd64.tar.gz"
-      sha256 "c79f8b0bec79c632b5b7c169cb6072165d522844e1c1780499bdd78d979ab7fd"
+      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.8.0/twsnmpneo_linux_amd64.tar.gz"
+      sha256 "258c5fca0e5e3a9a19ff66137c1b0339d47c93fd006bbf18aac0ae1659d22cb9"
       define_method(:install) do
         bin.install "twsnmpneo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.7.0/twsnmpneo_linux_arm64.tar.gz"
-      sha256 "08a684eb6dae60396d9fdb0ad6b1d3a88f1090e24f0f42308654277460c59976"
+      url "https://github.com/twsnmp/twsnmpneo/releases/download/v0.8.0/twsnmpneo_linux_arm64.tar.gz"
+      sha256 "3e8193aafeefdcc750b27f7ea53b6be3387bda81b8f09b98baaa04533cc4d562"
       define_method(:install) do
         bin.install "twsnmpneo"
       end
